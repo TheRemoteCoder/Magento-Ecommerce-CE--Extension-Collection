@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+       <TheRemoteCoder_CrontabJobs>
+          <version>0.0.1</version>
+       </TheRemoteCoder_CrontabJobs>
+    </modules>
+    <crontab>
+
+        <jobs>
+            <!-- Mage_CatalogRule -->
+            <catalogrule_apply_all>
+                <schedule><cron_expr>0 6 * * *</cron_expr></schedule>
+                <run><model>catalogrule/observer::dailyCatalogUpdate</model></run>
+            </catalogrule_apply_all>
+            <catalogrule_apply_pricingrules>
+                <schedule><cron_expr>30 5 * * *</cron_expr></schedule>
+                <run><model>catalogrule/observer::applyAllRules</model></run>
+            </catalogrule_apply_pricingrules>
+
+            <!-- Mage_Log -->
+            <log_clean>
+                <schedule><cron_expr>0 5 * * *</cron_expr></schedule>
+                <run><model>log/cron::logClean</model></run>
+            </log_clean>
+            <log_aggregation>
+                <schedule><cron_expr>*/10 * * * *</cron_expr></schedule>
+                <run><model>log/aggregation::run</model></run>
+            </log_aggregation>
+
+            <!-- Mage_ProductAlert -->
+            <catalog_product_alert>
+                <schedule><cron_expr>30 6 * * *</cron_expr></schedule>
+                <run><model>productalert/observer::process</model></run>
+            </catalog_product_alert>
+
+            <!-- Mage_Sitemap -->
+            <sitemap_generate>
+                <schedule><cron_expr>30 4 * * *</cron_expr></schedule>
+                <run><model>sitemap/observer::scheduledGenerateSitemaps</model></run>
+            </sitemap_generate>
+        </jobs>
+
+        <events>
+            <!-- Mage_CatalogRule -->
+            <catalog_product_get_final_price>
+                <observers>
+                    <catalogrule>
+                        <type>singleton</type>
+                        <class>catalogrule/observer</class>
+                        <method>processAdminFinalPrice</method>
+                    </catalogrule>
+                </observers>
+            </catalog_product_get_final_price>
+            <catalog_product_get_front_price>
+                <observers>
+                    <catalogrule>
+                        <type>singleton</type>
+                        <class>catalogrule/observer</class>
+                        <method>processFrontFinalPrice</method>
+                    </catalogrule>
+                </observers>
+            </catalog_product_get_front_price>
+        </events>
+
+    </crontab>
+</config>
+

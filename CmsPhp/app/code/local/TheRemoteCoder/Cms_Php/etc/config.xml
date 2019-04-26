@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <TheRemoteCoder_CmsPhp>
+            <version>1.0.2</version>
+        </TheRemoteCoder_CmsPhp>
+    </modules>
+    <global>
+        <blocks>
+            <TheRemoteCoder_cmsphp>
+                <class>TheRemoteCoder_CmsPhp_Block</class>
+            </TheRemoteCoder_cmsphp>
+        </blocks>
+    </global>
+</config>
+

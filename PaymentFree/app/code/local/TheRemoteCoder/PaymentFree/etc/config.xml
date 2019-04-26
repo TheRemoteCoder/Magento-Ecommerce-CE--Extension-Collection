@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+       <TheRemoteCoder_PaymentFree>
+          <version>0.0.1</version>
+       </TheRemoteCoder_PaymentFree>
+    </modules>
+
+    <global>
+        <models>
+            <!-- Model group alias to be used in Mage::getModel('paymentfree/...'); -->
+            <paymentfree>
+                <class>TheRemoteCoder_PaymentFree_Model</class>
+            </paymentfree>
+        </models>
+        <resources>
+            <paymentfree_setup>
+                <setup>
+                    <module>TheRemoteCoder_PaymentFree</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </paymentfree_setup>
+            <paymentfree_write>
+                <connection>
+                  <use>core_write</use>
+                </connection>
+            </paymentfree_write>
+            <paymentfree_read>
+               <connection>
+                <use>core_read</use>
+              </connection>
+            </paymentfree_read>
+        </resources>
+    </global>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <TheRemoteCoder_PaymentFree>
+                    <files>
+                        <default>TheRemoteCoder_PaymentFree.csv</default>
+                    </files>
+                </TheRemoteCoder_PaymentFree>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <payment>
+            <paymentfree>
+                <active>0</active>
+                <model>paymentfree/paymentFree</model>
+                <order_status>pending</order_status>
+                <title>You shall not pay</title>
+                <allowspecific>0</allowspecific>
+                <sort_order>1</sort_order>
+                <group>offline</group>
+            </paymentfree>
+         </payment>
+    </default>
+
+</config>

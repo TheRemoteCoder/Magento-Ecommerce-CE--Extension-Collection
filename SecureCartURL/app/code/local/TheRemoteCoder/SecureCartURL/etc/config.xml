@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TheRemoteCoder_SecureCartURL>
+            <version>1.0.0</version>
+        </TheRemoteCoder_SecureCartURL>
+    </modules>
+    <frontend>
+        <secure_url>
+            <checkout_cart>/checkout/cart</checkout_cart>
+        </secure_url>
+    </frontend>
+</config>

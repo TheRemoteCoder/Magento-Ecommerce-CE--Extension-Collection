@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <TheRemoteCoder_SecureCartURL>
+            <active>true</active>
+            <codePool>local</codePool>
+            <version>1.0.0</version>
+            <depends>
+                <Mage_Core />
+            </depends>
+        </TheRemoteCoder_SecureCartURL>
+    </modules>
+</config>

@@ -1,0 +1,3 @@
+"Developer recommendation: Use 'pending' (new) or 'pending_payment' states only.","Entwickler-Tipp: Nur die Stati 'pending' (neu) oder 'pending_payment' verwenden."
+"This field cannot be empty. Don't forget to restrict the customer group.","Dieses Feld darf nicht leer sein. Vergessen Sie bitte nicht die Kundengruppen einzuschränken."
+"Allow free payment for custom requirements. Ignores any cart values. Useful for: Development; internal workflows; e.g. ELV (direct debit / 'flat rate') contract customers.","Erlaubt Kunden eine Bezahlung ohne Kosten. Warenkorb-Werte werden ignoriert. Nützlich für Entwicklungsarbeiten, interne Arbeitsprozesse oder z.B. ELV-Vertragskunden (Flat-Rate)."

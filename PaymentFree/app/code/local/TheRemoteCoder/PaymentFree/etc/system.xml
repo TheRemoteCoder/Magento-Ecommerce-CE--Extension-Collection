@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <paymentfree translate="label comment" module="payment">
+                    <label>TheRemoteCoder - Custom Free Payment</label>
+                    <comment>
+                    Allow free payment for custom requirements. Ignores any cart values. Useful for: Development; internal workflows; e.g. ELV (direct debit / 'flat rate') contract customers.</comment>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <order_status translate="label comment">
+                            <label>New Order Status</label>
+                            <comment>Developer recommendation: Use 'pending' (new) or 'pending_payment' states only.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_order_status_new</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status>
+                        <customergroup translate="label comment">
+                            <label>Payment on specific customer groups</label>
+                            <comment>This field cannot be empty. Don't forget to restrict the customer group.</comment>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>adminhtml/system_config_source_customer_group</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </customergroup>
+                    </fields>
+                </paymentfree>
+            </groups>
+        </payment>
+    </sections>
+</config>
+
