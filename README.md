@@ -11,7 +11,7 @@
 
 ---
 
-[![GitHub release](https://img.shields.io/github/release/TheRemoteCoder/Magento-Extension-Collection.svg?style=flat)](https://github.com/TheRemoteCoder/Magento-Extension-Collection/releases)
+[![GitHub release](https://img.shields.io/github/release/TheRemoteCoder/Magento-Ecommerce-CE--Extension-Collection.svg)](https://github.com/TheRemoteCoder/Magento-Ecommerce-CE--Extension-Collection/releases)
 
 <br>
 
