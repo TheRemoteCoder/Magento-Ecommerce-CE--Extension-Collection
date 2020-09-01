@@ -1,3 +1,5 @@
+![Preview](preview.png)
+
 # Magento E-Commerce CE - Extension collection
 
 - [About](#about)
@@ -82,7 +84,7 @@ This extension lets customers leave the shop without any payment information but
 Make sure to test this carefully before implementation or everyone might get unwanted freebies ;)
 
 <br>
-Additional docs and screenshots can be found here: 
+Additional docs and screenshots can be found here:
 
 - `PaymentFree\app\code\local\PaymentFree\Docs`
 
