@@ -13,8 +13,6 @@
 
 ---
 
-[![GitHub release](https://img.shields.io/github/release/TheRemoteCoder/Magento-Ecommerce-CE--Extension-Collection.svg)](https://github.com/TheRemoteCoder/Magento-Ecommerce-CE--Extension-Collection/releases)
-
 <br>
 
 
