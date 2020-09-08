@@ -11,9 +11,11 @@
 - [How to use](#how-to-use)
 - [License »](/LICENSE.md)
 
+<br>
+
 ---
 
-<br>
+<br><br>
 
 
 ## About
