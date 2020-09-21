@@ -1,6 +1,6 @@
 ![Preview](preview.png)
 
-# Magento E-Commerce CE - Extension collection
+# Magento E-Commerce CE
 
 - [About](#about)
 - [Extensions](#extensions)
