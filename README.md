@@ -16,6 +16,7 @@
 ---
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TheRemoteCoder_Magento-Ecommerce-CE--Extension-Collection&metric=alert_status)](https://sonarcloud.io/dashboard?id=TheRemoteCoder_Magento-Ecommerce-CE--Extension-Collection)
+![Maintenance](https://img.shields.io/badge/maintained-no-lightgrey.svg)
 
 
 <br><br>
