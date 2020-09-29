@@ -9,7 +9,6 @@
   - [PaymentFree](#paymentfree)
   - [SecureCartURL](#securecarturl)
 - [How to use](#how-to-use)
-- [License »](/LICENSE.md)
 
 <br>
 
@@ -26,7 +25,7 @@
 
 This is a collection of a few straightforward to use Magento CE extensions. They have been developed for `Magento CE 1.4 – 1.6` but might work with wider ranges of versions (e.g. these extensions don't use the Database to keep it simple).
 
-They are especially useful for Community Edition setups when time and budget are low or installation of other extensions is not an option. Also it's sometimes the case that complex commercial extensions come with alot more issues too.
+They are especially useful for Community Edition setups when time and budget are low or installation of other extensions is not an option. Also, it's sometimes the case that complex commercial extensions come with a lot more issues too.
 
 
 <br><br>
@@ -37,7 +36,7 @@ They are especially useful for Community Edition setups when time and budget are
 
 _Magento CE 1.4. – 1.6._
 
-Use to redirect to any URI within this shop or to external resources. Block can be used safely in:
+Used to redirect to any URI within this shop or to external resources. Block can be used safely in:
 
 | Module           | Block type |
 | :--------------- | :--------- |
@@ -66,11 +65,11 @@ XML layout update:
 
 _Magento CE 1.5._
 
-Overrides and extends unimplemented core settings of Magento CE; so this is considered a fix too. Some cronjobs just don't work, even with backend options for them, because there are a few important XML settings missing. For convenience all have been grouped in one place to be easiliy modified.
+Overrides and extends unimplemented core settings of Magento CE; so this is considered a fix too. Some cronjobs just don't work, even with backend options for them, because there are a few important XML settings missing. For convenience all have been grouped in one place to be easily modified.
 
-> It's highly recommended to install the *Noovias Cronjob Manager* extension to see if the XML changes actually work (and it is a very good extension in general).
+> It's highly recommended installing the *Noovias Cronjob Manager* extension to see if the XML changes actually work (and it is a very good extension in general).
 
-Last but not least a cronjob needs to be set up serverside too. Alternative: Call `cron.php` manually from the browser, e.g. for testing purposes.
+Last but not least a cronjob needs to be set up server side too. Alternative: Call `cron.php` manually from the browser, e.g. for testing purposes.
 
 
 <br>
@@ -83,7 +82,7 @@ This extension lets customers leave the shop without any payment information but
 
 **Example workflow for inspiration:**
 
-> Either the customer itself or some of the shops employees create the order in the shop frontend for the customer. So why do employees need to use the frontend? Imagine the shop is used in multiple countries with different partners: Not everyone knows how to use Magento or should have access to the admin panel - even with restricted ACL rights. The frontend provides an easy way to handle these special B2B customers.
+> Either the customer itself or some of the shops employees create the order in the shop frontend for the customer. So why do employees need to use the frontend? Imagine the shop is used in multiple countries with different partners: Not everyone knows how to use Magento or should have access to the admin panel – even with restricted ACL rights. The frontend provides an easy way to handle these special B2B customers.
 
 Make sure to test this carefully before implementation or everyone might get unwanted freebies ;)
 
@@ -99,7 +98,7 @@ Additional docs and screenshots can be found here:
 
 ### SecureCartURL
 
-_Magento CE 1.5. - 1.6._
+_Magento CE 1.5. – 1.6._
 
 Rather a fix: Set the URL `/checkout/cart` to be a `secure_url`. There is no `https://` protocol in this step by default. To make this work changes to the URLs in the admin panel are required.
 
@@ -120,6 +119,6 @@ Just download the folders and copy them to the right place. They all will instal
 6. Clean the caches.
 7. If installed correctly they should appear in the admin panel in the part where you can enable/disable all modules.
 8. See if the module appears and the pages are working (depending on the code; check both frontend and backend).
-9. Check if the logs are ok under `/var/logs/`.
+9. Check if the logs are OK under `/var/logs/`.
 10. (Test and deploy)
 
