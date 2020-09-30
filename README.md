@@ -1,9 +1,9 @@
-![Preview](preview.png)
+![Magento EC – Extension Collection](teaser.png)
 
 # Magento E-Commerce CE
 
 - [About](#about)
-- [Extensions](#extensions)
+- [Features](#extensions)
   - [CmsPhp](#cmsphp)
   - [CrontabJobs](#crontabjobs)
   - [PaymentFree](#paymentfree)
@@ -17,9 +17,7 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TheRemoteCoder_Magento-Ecommerce-CE--Extension-Collection&metric=alert_status)](https://sonarcloud.io/dashboard?id=TheRemoteCoder_Magento-Ecommerce-CE--Extension-Collection)
 ![Maintenance](https://img.shields.io/badge/maintained-no-lightgrey.svg)
 
-
 <br><br>
-
 
 ## About
 
@@ -27,10 +25,9 @@ This is a collection of a few straightforward to use Magento CE extensions. They
 
 They are especially useful for Community Edition setups when time and budget are low or installation of other extensions is not an option. Also, it's sometimes the case that complex commercial extensions come with a lot more issues too.
 
-
 <br><br>
 
-## Extensions
+## Features
 
 ### CmsPhp
 
@@ -67,10 +64,9 @@ _Magento CE 1.5._
 
 Overrides and extends unimplemented core settings of Magento CE; so this is considered a fix too. Some cronjobs just don't work, even with backend options for them, because there are a few important XML settings missing. For convenience all have been grouped in one place to be easily modified.
 
-> It's highly recommended installing the *Noovias Cronjob Manager* extension to see if the XML changes actually work (and it is a very good extension in general).
+> It's highly recommended installing the _Noovias Cronjob Manager_ extension to see if the XML changes actually work (and it is a very good extension in general).
 
 Last but not least a cronjob needs to be set up server side too. Alternative: Call `cron.php` manually from the browser, e.g. for testing purposes.
-
 
 <br>
 
@@ -93,7 +89,6 @@ Additional docs and screenshots can be found here:
 
 `Mage::log()` items have been left in the class `TheRemoteCoder_PaymentFree_Model_PaymentFree` on purpose (commented out) for testing purposes before implementation.
 
-
 <br>
 
 ### SecureCartURL
@@ -101,7 +96,6 @@ Additional docs and screenshots can be found here:
 _Magento CE 1.5. – 1.6._
 
 Rather a fix: Set the URL `/checkout/cart` to be a `secure_url`. There is no `https://` protocol in this step by default. To make this work changes to the URLs in the admin panel are required.
-
 
 <br><br>
 
@@ -121,4 +115,3 @@ Just download the folders and copy them to the right place. They all will instal
 8. See if the module appears and the pages are working (depending on the code; check both frontend and backend).
 9. Check if the logs are OK under `/var/logs/`.
 10. (Test and deploy)
-
