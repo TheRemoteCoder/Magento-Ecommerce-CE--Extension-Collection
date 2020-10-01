@@ -70,6 +70,13 @@ Last but not least a cronjob needs to be set up server side too. Alternative: Ca
 
 <br>
 
+### Preview
+
+![Preview](src/CrontabJobs/Screenshot.png)
+
+
+<br>
+
 ### PaymentFree
 
 _Magento CE 1.6._
@@ -88,6 +95,15 @@ Additional docs and screenshots can be found here:
 - `PaymentFree\app\code\local\PaymentFree\Docs`
 
 `Mage::log()` items have been left in the class `TheRemoteCoder_PaymentFree_Model_PaymentFree` on purpose (commented out) for testing purposes before implementation.
+
+### Preview
+
+![Admin](src/PaymentFree/0-docs/Preview-Admin.png)
+
+![Frontend - Checkout](src/PaymentFree/0-docs/Preview-Frontend-Checkout.png)
+
+![Admin](src/PaymentFree/0-docs/Preview-Frontend-Orders.png)
+
 
 <br>
 
