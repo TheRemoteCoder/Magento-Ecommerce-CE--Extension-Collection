@@ -14,11 +14,6 @@
 
 ---
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TheRemoteCoder_Magento-Ecommerce-CE--Extension-Collection&metric=alert_status)](https://sonarcloud.io/dashboard?id=TheRemoteCoder_Magento-Ecommerce-CE--Extension-Collection)
-![Maintenance](https://img.shields.io/badge/maintained-no-lightgrey.svg)
-
-<br><br>
-
 ## About
 
 This is a collection of a few straightforward to use Magento CE extensions. They have been developed for `Magento CE 1.4 – 1.6` but might work with wider ranges of versions (e.g. these extensions don't use the Database to keep it simple).
